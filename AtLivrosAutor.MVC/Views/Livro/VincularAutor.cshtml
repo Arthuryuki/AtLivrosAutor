@@ -1,0 +1,19 @@
+﻿<div class="text-center">
+    @if (ViewBag.Erro != null)
+    {
+
+        <div class="alert alert-danger" role="alert">
+            @ViewBag.Erro
+        </div>
+    }
+
+    <button type="button" class="btn btn-outline-info">
+
+        @Html.ActionLink("Voltar Livros", "Index")
+    </button>
+    <button type="button" class="btn btn-outline-info">
+
+        @Html.ActionLink("Visualizar Autores", "Index", "Autor")
+    </button>
+
+</div>
